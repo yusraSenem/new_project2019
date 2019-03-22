@@ -103,13 +103,11 @@ header.masthead {
 
 
 .bg-login-image {
-  height: 450px;
   background-position: center;
   background-size: cover;
 }
 
 .bg-register-image {
-  background: url('https://source.unsplash.com/Mv9hjnEUHR4/600x800');
   background-position: center;
   background-size: cover;
 }
