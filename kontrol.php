@@ -1,4 +1,6 @@
 <?php
+require("vt_baglanti.php");
+
 if($_POST){
 
 	echo "post edildi";
