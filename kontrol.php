@@ -3,7 +3,7 @@ require("vt_baglanti.php");
 
 if($_POST){
 
-	echo "post edildi";
+	//echo "post edildi";
 
 	if(isset($_POST["giris_eposta"])){
 
@@ -22,7 +22,25 @@ if($_POST){
 		echo "password requesti olmadı.";
 	}
 
-	echo "epostanız:".$email."sifreniz:".$password;
+
+	if ($baglanti){
+	//echo "veri tabanına bağlantı yapıldı.";
+	$sorgu=mysqli_query($baglanti,"SELECT email,password FROM kullanici WHERE email='".$email."' AND password='".$password."'");
+		if (mysqli_num_rows($sorgu)>0){
+			$row=$sorgu->fetch_array(MYSQLI_ASSOC);
+			echo "hoşgeldin"." ".$row["email"];
+
+		}
+		else{
+			echo "kullanıcı adı veya şifre başarısız.";
+		}
+	}
+	else{
+	echo die(" veri tabanına bağlantı yapılmadı.");
+	}
+
+
+	
 }
 else{
 	echo "post edilmedi";
