@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Yönetici Paneli</title>
+  <title>Personel/Görev ekle</title>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -75,9 +75,34 @@
       </nav>
 
       <div class="container-fluid">
-        <h1 class="mt-4">Simple Sidebar</h1>
-        <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
+       <form>
+        <div class="form-group">
+    <label for="p_ad">Personelin Adı</label>
+    <input type="text" class="form-control" id="p_ad" placeholder="Personelin adını giriniz.">
+  </div>
+  <div class="form-group">
+    <label for="p_soyad">Personelin Soyadı</label>
+    <input type="text" class="form-control" id="p_soyad" placeholder="Personelin soyadını giriniz.">
+  </div>
+  <div class="form-group">
+    <label for="p_unvan">Personelin Unvanı</label>
+    <input type="text" class="form-control" id="p_unvan" placeholder="Personelin ünvanını giriniz.">
+  </div>
+  <div class="form-group">
+    <label for="p_bolum">Departman</label>
+    <input type="text" class="form-control" id="p_bolum" placeholder="Personelin çalıştığı departmanı giriniz.">
+  </div>
+    <div class="form-group">
+    <label for="p_email">E-Posta Adresi</label>
+    <input type="email" class="form-control" id="p_email" aria-describedby="emailHelp" placeholder="E-posta">
+  </div>
+  <div class="form-group">
+    <label for="p_sifre">Şifre</label>
+    <input type="password" class="form-control" id="p_sifre" placeholder="Şifre">
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>
       </div>
     </div>
     <!-- /#page-content-wrapper -->
