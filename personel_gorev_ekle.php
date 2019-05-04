@@ -1,7 +1,8 @@
 <?php include "sidebar.php" ?>
 
 <div class="container-fluid">
-  <form>
+  <form method="post" action="">
+    <h2>Personel Bilgileri</h2>
     <div class="form-group">
       <label for="p_ad">Personelin Adı</label>
       <input type="text" class="form-control" id="p_ad" placeholder="Personelin adını giriniz.">
@@ -15,8 +16,8 @@
       <input type="text" class="form-control" id="p_unvan" placeholder="Personelin ünvanını giriniz.">
     </div>
     <div class="form-group">
-      <label for="p_bolum">Departman</label>
-      <input type="text" class="form-control" id="p_bolum" placeholder="Personelin çalıştığı departmanı giriniz.">
+      <label for="gsmp">GSM</label>
+      <input type="text" class="form-control" id="gsmp" placeholder="Telefon numarasını giriniz.">
     </div>
     <div class="form-group">
       <label for="p_email">E-Posta Adresi</label>
@@ -30,7 +31,6 @@
     <button type="submit" class="btn btn-primary">Ekle</button>
   </form>
 </div>
-
 
 
 
