@@ -1,13 +1,18 @@
 <?php
-
 $vt_username="root";
 $vt_password="";
 $vt_server="localhost";
-$vt_database="level_up";
-
-$baglanti=mysqli_connect($vt_server,$vt_username,$vt_password,$vt_database);
-mysql_query("SET NAMES UTF8" ); 
 
 
+try{
+
+$db = new PDO("mysql:host=localhost; dbname=level_up;charset=utf8",$vt_username, $vt_password);
+
+
+}
+catch (Exception $e){
+	print "bağlantı hatası:".$e->getMessage()."<br/>";
+	die();
+}
 
 ?>

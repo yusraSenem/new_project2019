@@ -31,7 +31,7 @@
       <div class="sidebar-heading">Kullanıcı</div>
       <div class="list-group list-group-flush">
         <a href="#" class="list-group-item list-group-item-action bg-light">Gösterge Paneli</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Personeller</a>
+        <a href="personel.php" class="list-group-item list-group-item-action bg-light">Personeller</a>
         <a href="personel_gorev_ekle.php" class="list-group-item list-group-item-action bg-light">Personel/Görev Ekle</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Genel</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Olaylar</a>
