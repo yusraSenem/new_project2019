@@ -30,7 +30,7 @@
 	?>
 
 	<a href="gorevlipersonel.php"><button type="button" class="btn btn-primary">görevli personelleri göster</button></a>
-	<a href="personelekle.php"><button type="button" class="btn btn-primary">personel ekle</button></a>
+	<a href="personel_gorev_ekle.php"><button type="button" class="btn btn-primary">personel ekle</button></a>
 
 
 

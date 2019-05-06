@@ -1,5 +1,4 @@
 <?php
-require("vt_baglanti.php");
 
 if($_POST){
 
@@ -22,22 +21,17 @@ if($_POST){
 		echo "password requesti olmadı.";
 	}
 
-
-	if ($baglanti){
+	require("vt_baglanti.php");
 	//echo "veri tabanına bağlantı yapıldı.";
-	$sorgu=mysqli_query($baglanti,"SELECT email,password FROM kullanici WHERE email='".$email."' AND password='".$password."'");
-		if (mysqli_num_rows($sorgu)>0){
-			$row=$sorgu->fetch_array(MYSQLI_ASSOC);
-			echo "hoşgeldin"." ".$row["email"];
+	$sorgu=$db->query("SELECT p_email,sifre FROM personeller WHERE p_email='".$email."' AND sifre='".$password."'")->fetch(PDO::FETCH_ASSOC);
+		if ($sorgu){
+			
+			header('Location: yonetici_paneli.php');
 
 		}
 		else{
 			echo "kullanıcı adı veya şifre başarısız.";
 		}
-	}
-	else{
-	echo die(" veri tabanına bağlantı yapılmadı.");
-	}
 
 
 	
