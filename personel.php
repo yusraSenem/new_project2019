@@ -5,7 +5,7 @@
 	<a href="gorevlipersonel.php"><button type="button" class="btn btn-outline-primary btn-sm">Görevli Personelleri Göster</button></a>
 	<a href="personel_gorev_ekle.php"><button type="button" class="btn btn-outline-secondary btn-sm">Personel Ekle</button></a>
 	<a href="#"><button class="btn btn-outline-info btn-sm">Güncelle</button></a>
-	<a href="#"><button class="btn btn-outline-danger btn-sm">Sil</button></a>
+	<a href="sil.php"><button class="btn btn-outline-danger btn-sm">Sil</button></a>
 	</div>
 	<div class="row">
 	<?php
