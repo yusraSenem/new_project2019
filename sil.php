@@ -29,7 +29,7 @@ echo '<form action="gorev_dlt.php" method="Post">';
 echo '<div class="row" style="padding:10px;">';
 echo "<h3>Görev</h3>";
 echo "<select class='custom-select custom-select-lg mb-3' name='gorev_s'>";
-	include("vt_baglanti.php");
+	require("vt_baglanti.php");
 	$soru2=$db->query("SELECT gorev_kod,concat(gorev_kod,' ',gorev_ad) as gorev_kodad FROM gorevler ORDER BY gorev_kodad",PDO::FETCH_ASSOC);
 
 	foreach ($soru2 as $row2) {
@@ -46,7 +46,7 @@ echo "</form>";
 ?>
 
 
-</form>
+
 
 
 <?php include "topbar.php" ?>
