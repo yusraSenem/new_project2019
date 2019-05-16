@@ -11,8 +11,8 @@ if(isset($_POST["g_sil"])){
 
 
 	require("vt_baglanti.php");
-  		$sorgu_sg=$db->prepare("DELETE FROM gorevler WHERE gorev_kod=$kod");
-  		$sil=$sorgu_sg->execute([$kod]);
+  		$sorgu_sg=$db->prepare("DELETE FROM gorevler WHERE gorev_kod= :kod");
+  		$sil=$sorgu_sg->execute(["kod"=>$kod]);
 
 
   		if($sil){
@@ -20,8 +20,7 @@ if(isset($_POST["g_sil"])){
   			echo "görev silindi.";
 
   		}
-  		else{
-
+  		else{ 
   		echo "sorguda hata var.";
   		}
 }
