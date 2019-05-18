@@ -1,5 +1,8 @@
 <?php
 
+ob_start();
+session_start();
+
 if($_POST){
 
 	//echo "post edildi";
@@ -25,11 +28,22 @@ if($_POST){
 	//echo "veri tabanına bağlantı yapıldı.";
 	$sorgu=$db->query("SELECT p_email,sifre FROM personeller WHERE p_email='".$email."' AND sifre='".$password."'")->fetch(PDO::FETCH_ASSOC);
 		if ($sorgu){
-			
+			$_SESSION["login"] = "true";
+    		$_SESSION["user"] = $email;
+    		$_SESSION["pass"] = $password;
+    
 			header('Location: yonetici_paneli.php');
 
 		}
 		else{
+			if($email=="" or $password==""){
+
+				echo "<center>Lutfen kullanici adi ya da sifreyi bos birakmayiniz..! <a href=javascript:history.back(-1)>Geri Don</a></center>";
+			}
+			else{
+				echo "<center>Kullanici Adi/Sifre Yanlis.<br><a href=javascript:history.back(-1)>Geri Don</a></center>";
+			}
+			
 			echo "kullanıcı adı veya şifre başarısız.";
 		}
 
@@ -39,6 +53,6 @@ if($_POST){
 else{
 	echo "post edilmedi";
 }
-
+ob_end_flush();
 
 ?>

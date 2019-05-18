@@ -34,7 +34,7 @@
         <a href="personel.php" class="list-group-item list-group-item-action bg-light">Personeller</a>
         <a href="personel_gorev_ekle.php" class="list-group-item list-group-item-action bg-light">Personel/Görev Ekle</a>
         <a href="atama.php" class="list-group-item list-group-item-action bg-light">Atama İşlemleri</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Olaylar</a>
+        <a href="son.php" class="list-group-item list-group-item-action bg-light">Görev Sonlandırma</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Profil</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Durum</a>
       </div>
