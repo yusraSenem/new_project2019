@@ -14,7 +14,7 @@ if(isset($_POST["ekle"])){
 
   require("vt_baglanti.php");
   $sorgu=$db->prepare("INSERT INTO personeller VALUES (null, ?,?, ?,?,?,?,?,2)");
-  $eklemek=$sorgu->execute($pers_veri);
+  $eklemek=$sorgu->execute($pers_veri); 
   if($eklemek){
     $id=$db->lastInsertId();
     echo "işlem başarılı";

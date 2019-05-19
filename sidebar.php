@@ -30,13 +30,19 @@
     <div class="bg-light border-right" id="sidebar-wrapper">
       <div class="sidebar-heading">Kullanıcı</div>
       <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action bg-light">Gösterge Paneli</a>
+       
+        <a href="yonetici_paneli.php" class="list-group-item list-group-item-action bg-light">Gösterge Paneli</a>
+        
+
+
+        
+
         <a href="personel.php" class="list-group-item list-group-item-action bg-light">Personeller</a>
         <a href="personel_gorev_ekle.php" class="list-group-item list-group-item-action bg-light">Personel/Görev Ekle</a>
         <a href="atama.php" class="list-group-item list-group-item-action bg-light">Atama İşlemleri</a>
         <a href="son.php" class="list-group-item list-group-item-action bg-light">Görev Sonlandırma</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Profil</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Durum</a>
+        <a href="logout.php" class="list-group-item list-group-item-action bg-light">Güvenli Çıkış</a>
       </div>
     </div>
     <!-- /#sidebar-wrapper -->

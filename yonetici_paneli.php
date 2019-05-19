@@ -7,9 +7,15 @@ if(!isset($_SESSION["login"])){
 }
 else {
     echo "<center>Admin sayfasina hosgeldiniz..! ";
-    echo "<a href=logout.php>Guvenli cikis</a></center>";
+    echo "<a href=logout.php></a>";
 }
-
-      
 ?>
+
+<div>kjsdhjkmdnbfhlsjkfnjfıdouhjrıofjd</div>
+
+
+
+
+
+
 <?php include "topbar.php" ?>
