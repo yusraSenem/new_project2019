@@ -67,26 +67,21 @@
                     <div class="form-group">
                       <div class="custom-control custom-checkbox small">
                         <input type="checkbox" class="custom-control-input" id="customCheck">
-                        <label class="custom-control-label" for="customCheck">Remember Me</label>
+                        <label class="custom-control-label" for="customCheck">Beni Hatırla</label>
                       </div>
                     </div>
                     <input type="submit" class="btn btn-primary btn-user btn-block" name="giris_gonder">
                      
                     </input>
                     <hr>
-                    <a href="index.html" class="btn btn-google btn-user btn-block">
-                      <i class="fab fa-google fa-fw"></i> Login with Google
-                    </a>
-                    <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                      <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
-                    </a>
+                    
                   </form>
                   <hr>
                   <div class="text-center">
-                    <a class="small" href="forgot_password.html">Forgot Password?</a>
+                    <a class="small" href="forgot_password.html">Şifreni mi Unuttun?</a>
                   </div>
                   <div class="text-center">
-                    <a class="small" href="register_first.php">Create an Account!</a>
+                    <a class="small" href="register_first.php">Bir Hesap Oluştur</a>
                   </div>
                 </div>
               </div>

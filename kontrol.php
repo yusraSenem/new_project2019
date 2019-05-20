@@ -26,13 +26,25 @@ if($_POST){
 
 	require("vt_baglanti.php");
 	//echo "veri tabanına bağlantı yapıldı.";
-	$sorgu=$db->query("SELECT p_email,sifre FROM personeller WHERE p_email='".$email."' AND sifre='".$password."'")->fetch(PDO::FETCH_ASSOC);
+	$sorgu=$db->query("SELECT p_email,sifre,yetki_id FROM personeller WHERE p_email='".$email."' AND sifre='".$password."'")->fetch(PDO::FETCH_ASSOC);
 		if ($sorgu){
 			$_SESSION["login"] = "true";
     		$_SESSION["user"] = $email;
     		$_SESSION["pass"] = $password;
-    
-			header('Location: yonetici_paneli.php');
+    		if($sorgu["yetki_id"]=="1"){
+
+				header('Location: yonetici_paneli.php');
+
+			}
+			else if($sorgu["yetki_id"]=="2"){
+
+				header('Location: personel_sahife.php');
+
+			}
+
+
+
+
 
 		}
 		else{
