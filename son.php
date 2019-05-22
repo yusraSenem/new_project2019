@@ -31,7 +31,12 @@ echo "<td>".$row['unvan']."</td>";
 echo "<td>".$row['gorev_ad']."</td>";
 echo "<td>".$row['baslama_tarihi']."</td>";
 echo "<td>".$row['bitis_tarihi']."</td>";
-echo "<td><button class='btn btn-outline-danger btn-sm'>görevi sonlandır</button></td>";
+echo "<form action='bitirdigi_gun.php' method='POST'>";
+echo '<input type="hidden" id="pers" name="pers" value="p_id">';
+echo '<input type="hidden" id="gor" name="gor" value="gorev_kod">';
+echo "<td><button type='submit' type='hidden' class='btn btn-outline-danger btn-sm'>görevi sonlandır</button></td>";
+
+echo "</form";
 echo "</tr>";
 
 
