@@ -4,7 +4,7 @@
 
 $email=$_SESSION["user"];
 require("vt_baglanti.php");
-$sorgu=$db->query("SELECT p_ad,p_soyad,unvan,gorev_ad,baslama_tarihi,bitis_tarihi,p_email FROM personeller,gorevler,personel_gorev WHERE personeller.p_id=personel_gorev.p_id and gorevler.gorev_kod=personel_gorev.gorev_kod ");
+$sorgu=$db->query("SELECT * FROM personeller,gorevler,personel_gorev WHERE gorevler.gorev_kod=personel_gorev.gorev_kod and personeller.p_id=personel_gorev.p_id ");
 
 
 	echo "<table class='table table-striped' border='1'>";
@@ -18,8 +18,8 @@ $sorgu=$db->query("SELECT p_ad,p_soyad,unvan,gorev_ad,baslama_tarihi,bitis_tarih
 	echo "<th scope='col'>görevi sonlandır</th>";
 	echo "</tr>";
 	echo "<tr>";
-
-
+$sorgu->execute();
+$sorgu = $sorgu->fetchAll(PDO::FETCH_ASSOC);
 foreach ($sorgu as $row) {
 
 	# code... 
@@ -32,8 +32,8 @@ echo "<td>".$row['gorev_ad']."</td>";
 echo "<td>".$row['baslama_tarihi']."</td>";
 echo "<td>".$row['bitis_tarihi']."</td>";
 echo "<form action='bitirdigi_gun.php' method='POST'>";
-echo '<input type="hidden" id="pers" name="pers" value="p_id">';
-echo '<input type="hidden" id="gor" name="gor" value="gorev_kod">';
+echo '<input type="hidden" id="pers" name="pers" value='.$row['p_id'].'>';
+echo '<input type="hidden" id="gor" name="gor" value='.$row['gorev_kod'].'>';
 echo "<td><button type='submit' type='hidden' class='btn btn-outline-danger btn-sm'>görevi sonlandır</button></td>";
 
 echo "</form";

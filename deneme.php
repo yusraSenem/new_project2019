@@ -1,6 +1,12 @@
 <?php
-date_default_timezone_set('Europe/Istanbul');
-$simdi=date_create()->format('Y-m-d');
-echo $simdi;
+require("vt_baglanti.php");
+$sorgu=$db->query("SELECT baslama_tarihi FROM gorevler");
+$sorgu->execute();
+$sorgu = $sorgu->fetchAll(PDO::FETCH_OBJ);
+
+foreach ($sorgu as $s) {
+	echo $s->baslama_tarihi."<br >";
+}
+
 
  ?>
