@@ -4,7 +4,6 @@
 <head>
 
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -13,28 +12,21 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- Custom styles for this template-->
+    <!-- css kodları-->
     <link href="css_code.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template-->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
-  
-
 </head>
 
 <body class="bg-primary">
 
   <div class="container">
 
-    <!-- Outer Row -->
+    
     <div class="row justify-content-center">
 
       <div class="col-xl-10 col-lg-12 col-md-9">
         <div class="card o-hidden border-0 shadow-lg my-5">
           <div class="card-body p-0">
-            <!-- Nested Row within Card Body -->
+            <!-- tab -->
             <div class="row">
               <div style="height: 40px;width: 920px; background-color: white;">
               <ul class="nav nav-tabs">
@@ -64,25 +56,15 @@
                     <div class="form-group">
                       <input type="password" class="form-control form-control-user" id="giris_sifre" name="giris_sifre" placeholder="Şifrenizi giriniz">
                     </div>
-                    <div class="form-group">
-                      <div class="custom-control custom-checkbox small">
-                        <input type="checkbox" class="custom-control-input" id="customCheck">
-                        <label class="custom-control-label" for="customCheck">Beni Hatırla</label>
-                      </div>
-                    </div>
+                    
                     <input type="submit" class="btn btn-primary btn-user btn-block" name="giris_gonder">
                      
                     </input>
-                    <hr>
+                    
                     
                   </form>
-                  <hr>
-                  <div class="text-center">
-                    <a class="small" href="forgot_password.html">Şifreni mi Unuttun?</a>
-                  </div>
-                  <div class="text-center">
-                    <a class="small" href="register_first.php">Bir Hesap Oluştur</a>
-                  </div>
+                  
+                  
                 </div>
               </div>
             </div>

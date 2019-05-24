@@ -2,8 +2,8 @@
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col border border-primary">
-  <form method="post" action="insert_personel.php">
+    
+  <form method="post" action="insert_personel.php " class="card card-body">
     <h2>Personel Ekle</h2>
     <div class="form-group">
       <label for="p_ad">Personelin Adı</label>
@@ -42,10 +42,10 @@
   
     <button type="submit" class="btn btn-primary" name="ekle">Ekle</button>
   </form>
-</div>
 
-    <div class="col border border-primary">
-  <form method="post" action="insert_personel.php">
+
+    
+  <form method="post" action="insert_gorev.php" class="card card-body">
     <h2>Görev Ekle</h2>
     <div class="form-group">
       <label for="gorev">Görev Kod</label>
@@ -75,7 +75,7 @@
   
     <button type="submit" class="btn btn-primary" name="gorev_ekle">Ekle</button>
   </form>
-</div>
+
 
 
 
