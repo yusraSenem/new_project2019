@@ -36,7 +36,7 @@
 
         
         <a href="son.php" class="list-group-item list-group-item-action bg-light">Görevlerim</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Profil</a>
+        <a href="p_profil.php" class="list-group-item list-group-item-action bg-light">Profil</a>
         <a href="logout.php" class="list-group-item list-group-item-action bg-light">Güvenli Çıkış</a>
       </div>
     </div>

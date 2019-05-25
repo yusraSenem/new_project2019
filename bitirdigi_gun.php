@@ -40,7 +40,9 @@ function fark(){
 	    $haydi=$herseyi_guncelle->execute($dize);
 		 
 		if($haydi){
-			echo "guncelleme başarılı";
+			$silinen_gorev=$db->prepare("DELETE FROM `personel_gorev` WHERE p_id=:pers AND gorev_kod=:gor");
+			$silinen_gorev->execute([":gor" => $gor,":pers" => $pers]);
+			header('Location: personel_sahife.php');
 		}
 		else{
 			echo "guncelleme başarısız.";
