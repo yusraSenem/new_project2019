@@ -42,7 +42,7 @@ function fark(){
 		if($haydi){
 			$silinen_gorev=$db->prepare("DELETE FROM `personel_gorev` WHERE p_id=:pers AND gorev_kod=:gor");
 			$silinen_gorev->execute([":gor" => $gor,":pers" => $pers]);
-			header('Location: personel_sahife.php');
+			header('Location: p_profil.php');
 		}
 		else{
 			echo "guncelleme başarısız.";

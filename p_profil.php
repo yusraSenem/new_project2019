@@ -4,6 +4,6 @@
 
 
 
-<h2><center>Herhangi bir göreviniz bulunmamaktadır.</center></h2>
+<h2><center>Görev tamamlandı.</center></h2>
 
 <?php include("pers_top.php") ?>
