@@ -1,6 +1,7 @@
 <?php include "sidebar.php" ?>
 
 <div class="container">
+	<div class="card card-body">
 	<div class="row">
 	<a href="gorevlipersonel.php"><button type="button" class="btn btn-outline-primary btn-sm">Görevli Personelleri Göster</button></a>
 	<a href="personel_gorev_ekle.php"><button type="button" class="btn btn-outline-secondary btn-sm">Personel Ekle</button></a>
@@ -42,7 +43,7 @@
 
 
 </div>
-
+</div>
 
 
 

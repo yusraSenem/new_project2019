@@ -1,0 +1,13 @@
+
+.a:hover{
+ -webkit-box-shadow: inset 7px 6px 35px 0px rgba(0,0,0,0.77);
+-moz-box-shadow: inset 7px 6px 35px 0px rgba(0,0,0,0.77);
+box-shadow: inset 7px 6px 35px 0px rgba(0,0,0,0.77);
+
+}
+.a{
+	margin-top: 10px;
+}
+.b{
+
+}

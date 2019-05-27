@@ -1,9 +1,9 @@
 <?php include "sidebar.php" ?>
 
-<div class="container-fluid">
-  <div class="row">
-    
-  <form method="post" action="insert_personel.php " class="card card-body">
+<div class="container">
+ 
+    <div class="card card-header" style="margin-top: 10px;">
+  <form method="post" action="insert_personel.php ">
     <h2>Personel Ekle</h2>
     <div class="form-group">
       <label for="p_ad">Personelin Adı</label>
@@ -42,10 +42,11 @@
   
     <button type="submit" class="btn btn-primary" name="ekle">Ekle</button>
   </form>
+</div>
 
 
-    
-  <form method="post" action="insert_gorev.php" class="card card-body">
+  <div class="card card-header" style="margin-top: 10px;">  
+  <form method="post" action="insert_gorev.php">
     <h2>Görev Ekle</h2>
     <div class="form-group">
       <label for="gorev">Görev Kod</label>
@@ -75,11 +76,11 @@
   
     <button type="submit" class="btn btn-primary" name="gorev_ekle">Ekle</button>
   </form>
-
-
-
-
 </div>
+
+
+
+
 </div>
 
 
