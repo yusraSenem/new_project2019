@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<title>yakupun sayfası</title>
+	<meta charset="UTF-8">
+	<h1> deneme yapıyorum </h1>
+</head>
+<script>
+	$(document).ready(function(){
+		$("#gonder").click(function(){
+			eposta=$("#email").val();
+			sifre=$("#pass").val();
+			$.post("kont.php",{email:eposta,sifre:sifre},function(data,status){
+				console.log(data)+console.log(status);
+			});
+		});
+	})
+		
+	
+</script>
+
+<body>
+<input type="text" id="email">
+<input type="text" id="pass">
+<button id="gonder">gönder</button>
+
+
+
+</body>
+</html>
